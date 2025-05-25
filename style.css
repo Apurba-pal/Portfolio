@@ -205,6 +205,13 @@ header nav ul li a i{
     line-height: 70px;
     color: white;
  }
+ #home .home-row h6{
+        font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--TextColor);
+    margin-bottom: 20px;
+ }
 
  #home .home-row h1 span{
     color: var(--Theme);
@@ -440,34 +447,34 @@ header nav ul li a i{
         }
     }
  /* fact section ends */
- /* Resume section starts */
-#resume{
+ /* experience section starts */
+#experience{
     padding: 70px 30px;
     background-color: white;
 }
 
-#resume .resume-row{
+#experience .experience-row{
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-top: 35px;
 }
-#resume .resume-row .resume-cols{
-    flex-basis: 50%;
+#experience .experience-row .experience-cols{
+    flex-basis: 100%;
 }
-#resume .resume-row .resume-cols h2{
+#experience .experience-row .experience-cols h2{
     color: var(--SideBG);
     font-weight: 600;
     font-size: 25px;
     margin: 15px;
 }
-#resume .resume-row .resume-cols .my-info{
+#experience .experience-row .experience-cols .my-info{
     padding: 0 20px 0 20px;
     margin: 20px 0;
     border-left: 2px solid var(--Theme);
     position: relative;
 }
-#resume .resume-row .resume-cols .my-info::before {
+#experience .experience-row .experience-cols .my-info::before {
     content: '';
     position: absolute;
     top: 0;
@@ -479,33 +486,33 @@ header nav ul li a i{
     border: 2px solid var(--Theme);
 }
 
-#resume .resume-row .resume-cols h3{
+#experience .experience-row .experience-cols h3{
     color: var(--Theme);
     font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
 }
-#resume .resume-row .resume-cols .my-info p{
+#experience .experience-row .experience-cols .my-info p{
     color: var(--TextColor);
     font-size: 15px;
     font-weight: 600;
     font-style: italic;
     font-weight: 500;
 }
-#resume .resume-row .resume-cols .my-info ul li {
+#experience .experience-row .experience-cols .my-info ul li {
     margin: 10px 0;
     margin-left: 20px;
     color: var(--TextColor);
     font-size: 15px;
     font-weight: 500;
 }
-#resume .resume-row .resume-cols .my-edu{
+#experience .experience-row .experience-cols .my-edu{
     padding: 0 20px 0 20px;
     border-left: 2px solid var(--Theme);
     position: relative;
 }
 
-#resume .resume-row .resume-cols .my-edu::before{
+#experience .experience-row .experience-cols .my-edu::before{
     content: '';
     position: absolute;
     top: 0;
@@ -517,7 +524,7 @@ header nav ul li a i{
     border: 2px solid var(--Theme);
 }
 
-#resume .resume-row .resume-cols .sp-box{
+#experience .experience-row .experience-cols .sp-box{
     padding: 4px 22px;
     background-color: lightblue;
     color: var(--TextColor);
@@ -529,26 +536,26 @@ header nav ul li a i{
     display: inline-block;
 }
 
-#resume .resume-row .resume-cols .my-edu span + p{
+#experience .experience-row .experience-cols .my-edu span + p{
     color: var(--TextColor);
     font-size: 15px;
     font-weight: 500;
     font-style: italic;
     margin-bottom: 15px;
 }
-#resume .resume-row .resume-cols .my-edu span+p+p{
+#experience .experience-row .experience-cols .my-edu span+p+p{
     color: var(--TextColor);
     font-size: 15px;
     font-weight: 500;
     padding-bottom: 15px;
 }
 
-#resume .resume-row .resume-cols .pro-exp {
+#experience .experience-row .experience-cols .pro-exp {
     padding: 0 20px 0 20px;
     border-left: 2px solid var(--Theme);
     position: relative;
 }
-#resume .resume-row .resume-cols .pro-exp::before {
+#experience .experience-row .experience-cols .pro-exp::before {
     content: "";
     position: inherit;
     top: 0px;
@@ -561,14 +568,14 @@ header nav ul li a i{
     background-color: white;
 }
 
-#resume .resume-row .resume-cols .pro-exp p{
+#experience .experience-row .experience-cols .pro-exp p{
     color: var(--TextColor);
     font-size: 17px;
     font-weight: 500;
     font-style: italic;
 }
 
-#resume .resume-row .resume-cols .pro-exp ul li{
+#experience .experience-row .experience-cols .pro-exp ul li{
     margin: 10px 0;
     margin-left: 20px;
     color: var(--TextColor);
@@ -577,23 +584,23 @@ header nav ul li a i{
 }
 
 @media only screen and (max-width: 800px) {
-    #resume{
+    #experience{
         padding: 50px 15px;
     }
-    #resume .resume-row{
+    #experience .experience-row{
         flex-direction: column;
     }
-    #resume .resume-row .resume-cols{
+    #experience .experience-row .experience-cols{
         flex-basis: 100%;
     }
 }
- /* resume section ends */
- /* portfolio section starts */
-#portfolio{
+ /* experience section ends */
+ /* projects section starts */
+#projects{
     padding: 70px 30px;
 }
 
-#portfolio .port-row{
+#projects .port-row{
     margin-top: 50px;
     /* display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -606,7 +613,7 @@ header nav ul li a i{
     gap: 40px;
 }
 
-#portfolio .port-row .port-item{
+#projects .port-row .port-item{
      position: relative;
      border-radius: 10px;
      overflow: hidden;
@@ -614,7 +621,7 @@ header nav ul li a i{
 }
 
 
-#portfolio .port-row .port-item .port-img img{
+#projects .port-row .port-item .port-img img{
     /* width: 50%; */
     width: 280px;
     height: 180px;
@@ -622,7 +629,7 @@ header nav ul li a i{
 }
 
 
-#portfolio .port-row .port-item .port-info{
+#projects .port-row .port-item .port-info{
     position: absolute;
     top: 0;
     left: 0;
@@ -642,22 +649,22 @@ header nav ul li a i{
     visibility: hidden;
 }
 /* 1:22:00 */
- #portfolio .port-row .port-item:hover .port-info{
+ #projects .port-row .port-item:hover .port-info{
     transform: scale(1);
     visibility: visible;
     /* font-size: 10px; */
  }
 
-#portfolio .port-row .port-item .port-info h4{
+#projects .port-row .port-item .port-info h4{
     color: var(--BgColor);
     font-size: 25px;
     font-weight: 600;
 }
-#portfolio .port-row .port-item .port-info h4 + p{
+#projects .port-row .port-item .port-info h4 + p{
     color: var(--BgColor);
     font-size: 14px;
 }
-#portfolio .port-row .port-item .port-info a{
+#projects .port-row .port-item .port-info a{
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
@@ -670,39 +677,39 @@ header nav ul li a i{
     transition: 0.4s;
 }
 
-#portfolio .port-row .port-item .port-info a:hover{
+#projects .port-row .port-item .port-info a:hover{
     background-color: var(--SideBG);
     color: var(--BgColor);
 }
 
 /* mobile view */
 /* @media only screen and (max-width: 700px) {
-    #portfolio{
+    #projects{
         padding: 50px 10px;
     }
 
-    #portfolio .port-row{
+    #projects .port-row{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
     }
 } */
 
 /* @media only screen and (max-width: 350px) {
-    #portfolio .port-row{
+    #projects .port-row{
         grid-template-columns: repeat(1, 1fr);
         padding: 15px;
     }
 } */
 
-/* portfolio section ends */
-/* services section starts */
+/* projects section ends */
+/* skillss section starts */
 
-#service{
+#skills{
     padding: 70px 30px;
     background-color: white;
 }
 
-#service .service-row{
+#skills .skills-row{
     margin-top:50px;
     display: flex;
     align-items: center;
@@ -711,7 +718,7 @@ header nav ul li a i{
     flex-wrap: wrap;
 }
 
-#service .service-row .service-box{
+#skills .skills-row .skills-box{
     display: flex;
     align-items: center;
     justify-content: baseline;
@@ -720,7 +727,7 @@ header nav ul li a i{
     width: 250px;
 }
 
-#service .service-row .service-box .icon{
+#skills .skills-row .skills-box .icon{
     /* width: 100px; */
     /* height: 100px; */
     padding: 10px;
@@ -731,19 +738,19 @@ header nav ul li a i{
     text-align: center;
 }
 
-#service .service-row .service-box:hover .icon i{
+#skills .skills-row .skills-box:hover .icon i{
     color: var(--IconBG);
     background-color: var(--IconBG);
     cursor: pointer;
 }
 
-#service .service-row .service-box .ser-info h4{
+#skills .skills-row .skills-box .ser-info h4{
     color: var(--SideBG);
     font-size: 20px;
     font-weight: 600;
 }
 
-#service .service-row .service-box .ser-info h4 + p{
+#skills .skills-row .skills-box .ser-info h4 + p{
     color: var(--TextColor);
     font-size: 14px;
     font-weight: 500;
@@ -751,16 +758,16 @@ header nav ul li a i{
 
 /* mobile view */
 /* @media only screen and (max-width: 800px){
-    #service{
+    #skills{
         padding: 50px 15px;
     }
-    #service .service-row{
+    #skills .skills-row{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
     }
 }
 @media only screen and(min-width: 500px) {
-    #service .service-row{
+    #skills .skills-row{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 15px;
     }
@@ -778,7 +785,7 @@ header nav ul li a i{
     width: 100%;
 }
 #contact .contact-row .contact-left{
-    flex-basis: 40%;
+    flex-basis: 100%;
     min-width: 40%;
     background-color: white;
     box-shadow: 0 0 20px rgba(0,0,0,20%);
@@ -819,7 +826,7 @@ header nav ul li a i{
 }
 
 #contact  .contact-row .contact-right{
-    flex-basis: 60%;
+    /* flex-basis: 60%; */
     min-width: 60%;
     background-color: white;
     box-shadow: 0 0 20px rgba(0,0,0,20%);
@@ -877,3 +884,7 @@ header nav ul li a i{
 }
 
 /* contact section ends */
+
+.quote {
+    font-size: 0.5rem;
+}
