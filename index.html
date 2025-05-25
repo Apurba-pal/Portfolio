@@ -1,399 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal projects</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
+  <body>
     <header>
-        <div class="profile">
-            <!-- add your image -->
-            <img src="/images/profile-pic.jpg" alt="" width="150px">
-            <!-- add your name -->
-            <h1>Apurba Pal</h1>
-            
-            <div class="social-icon">
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/apurba-pal-642729265/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Apurba-pal" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
+      <div class="profile">
+        <!-- add your image -->
+        <img src="/images/profile-pic.jpg" alt="" width="150px" />
+        <!-- add your name -->
+        <h1>Apurba Pal</h1>
 
-        <nav>
-            <ul>
-                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#about"><i class="fa-solid fa-user"></i>About Me</a></li>
-                <li><a href="#experience"><i class="fa-solid fa-file"></i>Experience</a></li>
-                <li><a href="#projects"><i class="fa-solid fa-bars-progress"></i>Projects</a></li>
-                <li><a href="#skills"><i class="fa-solid fa-briefcase"></i>Skills</a></li>
-                <li><a href="#contact"><i class="fa-solid fa-message"></i>Contact</a></li>
-            </ul>
-        </nav>
+        <div class="social-icon">
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a
+            href="https://www.linkedin.com/in/apurba-pal-642729265/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Apurba-pal" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" class="active"
+              ><i class="fa-solid fa-house"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about"><i class="fa-solid fa-user"></i>About Me</a>
+          </li>
+          <li>
+            <a href="#experience"><i class="fa-solid fa-file"></i>Experience</a>
+          </li>
+          <li>
+            <a href="#projects"
+              ><i class="fa-solid fa-bars-progress"></i>Projects</a
+            >
+          </li>
+          <li>
+            <a href="#skills"><i class="fa-solid fa-briefcase"></i>Skills</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa-solid fa-message"></i>Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <i class="fa-solid fa-xmark fa-bars" id="MenuBtn" onclick="btnClick()"></i>
     <!-- header ends here -->
 
-
     <!-- Body starts -->
     <main>
-        <!--  Home Section Starts Here -->
-        <section id="home">
-            <div class="home-row">
-                <!-- add your name -->
-                <h1>Hi, This is <br>Apurba Pal <span>.</span></h1>
-                <h6>"Jack of all trades, master of none, though oftentimes better than master of one."</h6>
-                <p>I am a <span class="auto-input"></span> </p>
+      <!--  Home Section Starts Here -->
+      <section id="home">
+        <div class="home-row">
+          <!-- add your name -->
+          <h1>Hi, This is <br />Apurba Pal <span>.</span></h1>
+          <h6>
+            "Jack of all trades, master of none, though oftentimes better than
+            master of one."
+          </h6>
+          <p>I am a <span class="auto-input"></span></p>
+        </div>
+      </section>
+      <!-- Home Section Ends Here -->
+
+      <!-- About section starts -->
+      <section id="about">
+        <h1 class="sub-heading">About Me</h1>
+        <div class="divider"></div>
+        <p class="sub-para">
+          3rd-year BTech CSE student at Adamas University with expertise in full
+          stack development, machine learning, computer vision, and 3D web
+          development. I've applied my skills through internships and projects
+          developing web scraping tools, AI detection systems, and immersive 3D
+          experiences. Proficient in Python, JavaScript, React, Node.js,
+          TensorFlow, and Keras, and fluent in English, Hindi, Bengali, and
+          Assamese. I combine innovative problem solving with strong
+          communication and teamwork to drive impactful solutions.
+        </p>
+        <div class="about-col">
+          <div class="img-col">
+            <!-- add your image -->
+            <img
+              src="/images/profile-pic.jpg"
+              alt=""
+              class="image"
+              id="image"
+            />
+          </div>
+          <div class="info-col">
+            <h2>Versatile Tech Explorer</h2>
+            <p>
+              I craft dynamic digital solutions across the full stack, blending
+              creativity with technical precision. From intuitive front-end
+              interfaces with React.js and Three.js to scalable back-end systems
+              with Node.js and MongoDB, I thrive on bringing ideas to life. With
+              a foundation in machine learning, computer vision, and 3D web
+              experiences, I approach every project with curiosity,
+              adaptability, and a drive for excellence.
+            </p>
+
+            <!-- Education  -->
+            <div class="about-edu">
+              <h2>Education</h2>
+              <div class="edu-entry">
+                <strong>B.Tech CSE:</strong> Adamas University, Kolkata, West Bengal <span>(September 2022 – Expected 2026)</span>
+              </div>
+              <div class="edu-entry">
+                <strong>Higher Secondary Education:</strong> Faculty Senior Secondary School, Guwahati, Assam <span>(August 2013 – May 2022)</span> | Score: 93.4 percentile
+              </div>
             </div>
-        </section>
-        <!-- Home Section Ends Here -->
+          </div>
+        </div>
+      </section>
 
+      <!-- experience section starts -->
+      <section id="experience">
+        <div class="sub-heading">Experience</div>
+        <div class="divider"></div>
+        <!-- <p class="sub-para">Welcome to my experience! Here, you'll find a summary of my skills, experiences, and accomplishments. From my education to my technical expertise, this experience provides an overview of my qualifications. I'm eager to showcase how I can contribute to your team or project.</p> -->
 
-        <!-- About section starts -->
-        <section id="about">
-            <h1 class="sub-heading">
-                About Me
-            </h1>
-            <div class="divider"></div>
-            <p class="sub-para">3rd-year BTech CSE student at Adamas University with expertise in full stack development, machine learning, computer vision, and 3D web development. I've applied my skills through internships and projects developing web scraping tools, AI detection systems, and immersive 3D experiences. Proficient in Python, JavaScript, React, Node.js, TensorFlow, and Keras, and fluent in English, Hindi, Bengali, and Assamese. I combine innovative problem solving with strong communication and teamwork to drive impactful solutions.</p>
-            <div class="about-col">
-                <div class="img-col">
-                    <!-- add your image -->
-                    <img src="/images/profile-pic.jpg" alt="" class="image" id="image">
+        <div class="experience-row">
+          <!-- left column -->
+
+          <!-- right column -->
+          <div class="experience-cols">
+            <div class="pro-exp">
+              <h3>Vigilantia Praesidium Pvt. Ltd.</h3>
+              <span class="sp-box">May 2025 – Present</span>
+              <p>Frontend Developer Intern</p>
+              <ul>
+                <li>
+                  Designed and developed the company's landing page, focusing on
+                  usability and visual appeal.
+                </li>
+                <li>
+                  Currently developing the entire website to showcase the
+                  company's surveillance solutions.
+                </li>
+              </ul>
+            </div>
+            <div class="pro-exp">
+              <h3>AZMTH</h3>
+              <span class="sp-box">August 2024 – Present</span>
+              <p>Frontend Developer</p>
+              <ul>
+                <li>
+                  Crafted the landing page for AZMTH with a focus on usability
+                  and visual appeal.
+                </li>
+                <li>
+                  Developed a 3D audio player using Rhubarb Lip Sync and FFmpeg
+                  to synchronize audio with a 3D character.
+                </li>
+                <li>
+                  Developed a Python app for automated Google Calendar event
+                  scheduling with OAuth 2.0.
+                </li>
+              </ul>
+            </div>
+            <div class="pro-exp">
+              <h3>Jindal Steel And Power Limited</h3>
+              <span class="sp-box">August 2024 – November 2024</span>
+              <p>Intern</p>
+              <ul>
+                <li>
+                  Scraped mechanical parts data from India Mart using Python,
+                  requests, and BeautifulSoup.
+                </li>
+                <li>
+                  Developed a cement bag counting system with OpenCV and YOLOv8.
+                </li>
+                <li>
+                  Built a truck number plate detection solution using OpenCV and
+                  Tesseract OCR.
+                </li>
+                <li>
+                  Optimized truck dispatches by analyzing customer data with
+                  Pandas and Excel.
+                </li>
+                <li>
+                  Automated email attachment storage in Google Drive via Google
+                  Apps Script.
+                </li>
+                <li>
+                  Created a script to update Google Sheets fields based on
+                  matching dimensions and weight thresholds.
+                </li>
+              </ul>
+            </div>
+            <div class="pro-exp">
+              <h3>The Future Network, Kolkata</h3>
+              <span class="sp-box">September 2023 – August 2024</span>
+              <p>Software Developer</p>
+              <ul>
+                <li>
+                  Developed human detection models using OpenCV and YOLOv5.
+                </li>
+                <li>
+                  Created a handwritten digit recognition system using neural
+                  networks.
+                </li>
+                <li>
+                  Built Python scripts to transfer data between CSV files and
+                  SQL/no-SQL databases.
+                </li>
+                <li>Developed a chatbot using Groq API and CustomTkinter.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ressume section ends -->
+
+      <!-- projects section starts -->
+      <section id="projects">
+        <h1 class="sub-heading">Projects</h1>
+        <div class="divider"></div>
+        <p class="sub-para">
+          Here are some of the projects I did using my skills and knowledge
+        </p>
+        <div class="tabs">
+          <button class="tab-btn active" onclick="showTab('web')">Web</button>
+          <button class="tab-btn" onclick="showTab('ml')">ML</button>
+        </div>
+        <div id="web" class="tab-content">
+          <div class="port-row">
+            <div class="port-item">
+              <div class="port-img">
+                <img src="/images/UI project.png" alt="" />
+              </div>
+              <div class="port-info">
+                <h4>3D Audio Visualizer</h4>
+                <p>Real-time visualizer with Three.js</p>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="port-img">
+                <img src="/images/Random-pass-gen.png" alt="" />
+              </div>
+              <div class="port-info">
+                <h4>3D Shirt Customizer</h4>
+                <p>
+                  Interactive shirt customizer with React, Three.js, and React
+                  Three Fiber
+                </p>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="port-img">
+                <img src="images/ToDo list(vanila).png" alt="" />
+              </div>
+              <div class="port-info">
+                <h4>Portfolio Website</h4>
+                <p>React.js portfolio site with Firebase backend</p>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="port-img">
+                <img src="/images/Flipping-login-signup-page.png" alt="" />
+              </div>
+              <div class="port-info">
+                <h4>3D Pokémon Website</h4>
+                <p>
+                  3D portfolio site using Three.js with WASD-controlled
+                  character and interactive Pokémon models
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ml" class="tab-content" style="display: none">
+          <div class="port-row">
+            <div class="port-item">
+              <div class="port-img">
+                <img src="/images/human_detection.gif" alt="" />
+              </div>
+              <div class="port-info">
+                <h4>Handwritten Digits Recognition</h4>
+                <p>Neural network with Numpy & Matplotlib</p>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="port-img">
+                <img src="/images/Air-movies.png" alt="" />
+              </div>
+              <div class="port-info">
+                <h4>Cat and Dog Classification</h4>
+                <p>CNN model using TensorFlow & Keras</p>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="port-img">
+                <img src="/images/UI project.png" alt="" />
+              </div>
+              <div class="port-info">
+                <h4>Personalized AI Assistant ("Open")</h4>
+                <p>
+                  AI assistant for voice commands, app control, and chatbot
+                  functionality
+                </p>
+              </div>
+            </div>
+            <div class="port-item">
+              <div class="port-img">
+                <img src="/images/Random-pass-gen.png" alt="" />
+              </div>
+              <div class="port-info">
+                <h4>Gesture Controlled Volume</h4>
+                <p>
+                  OpenCV app with MediaPipe for volume control via hand gestures
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function showTab(tab) {
+            document.getElementById("web").style.display =
+              tab === "web" ? "" : "none";
+            document.getElementById("ml").style.display =
+              tab === "ml" ? "" : "none";
+            var btns = document.querySelectorAll(".tab-btn");
+            btns.forEach(function (btn) {
+              btn.classList.remove("active");
+            });
+            if (tab === "web") btns[0].classList.add("active");
+            else btns[1].classList.add("active");
+          }
+        </script>
+        <style>
+          .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+          }
+          .tab-btn {
+            padding: 8px 24px;
+            border: none;
+            background: #eee;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: 600;
+          }
+          .tab-btn.active {
+            background: #219ebc;
+            color: #fff;
+          }
+          .tab-content {
+            animation: fadeIn 0.3s;
+          }
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+        </style>
+      </section>
+
+      <!-- projects section ends -->
+
+      <!-- skillss section start -->
+
+      <section id="skills">
+        <h1 class="sub-heading">Skills</h1>
+        <div class="divider"></div>
+        <p class="sub-para">
+          Skilled in Python and JavaScript, with experience in full stack
+          development, machine learning, computer vision, and data analysis.
+          Proficient in modern frameworks, tools, and collaborative development
+          workflows.
+        </p>
+        <div class="skills-row">
+          <div class="skills-box">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="ser-info">
+              <h4>Programming Languages</h4>
+              <p>Python, JavaScript</p>
+            </div>
+          </div>
+          <div class="skills-box">
+            <div class="icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="ser-info">
+              <h4>Web Development</h4>
+              <p>
+                Figma, React.js, Node.js, Express.js, MongoDB, Three.js,
+                Tailwind, React Three Fiber
+              </p>
+            </div>
+          </div>
+          <div class="skills-box">
+            <div class="icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="ser-info">
+              <h4>Machine Learning & Deep Learning</h4>
+              <p>TensorFlow, Keras, Scikit-Learn, Neural Networks (CNNs)</p>
+            </div>
+          </div>
+          <div class="skills-box">
+            <div class="icon">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="ser-info">
+              <h4>Computer Vision</h4>
+              <p>OpenCV, YOLO</p>
+            </div>
+          </div>
+          <div class="skills-box">
+            <div class="icon">
+              <i class="fa-solid fa-chart-bar"></i>
+            </div>
+            <div class="ser-info">
+              <h4>Data Analysis</h4>
+              <p>Pandas, Numpy</p>
+            </div>
+          </div>
+          <div class="skills-box">
+            <div class="icon">
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div class="ser-info">
+              <h4>Version Control</h4>
+              <p>Git, Github</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section start -->
+
+      <section id="contact">
+        <h1 class="sub-heading">Contact</h1>
+        <div class="divider"></div>
+        <p class="sub-para">
+          I'd love to hear from you! Whether you have a project in mind, want to
+          discuss potential collaborations, or simply want to connect, feel free
+          to reach out using the contact form below. I'm always open to new
+          opportunities and look forward to discussing how we can work together
+          to bring your ideas to life.
+        </p>
+
+        <div class="contact-row">
+          <!-- left col -->
+          <div class="contact-left">
+            <div
+              class="contact-icons-row"
+              style="display: flex; gap: 20px; flex-wrap: wrap"
+            >
+              <div
+                class="contact-icon-col"
+                style="
+                  flex: 1;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  min-width: 200px;
+                "
+              >
+                <!-- email box -->
+                <div class="icon-box">
+                  <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="info">
+                    <h4>Email:</h4>
+                    <!-- change your email -->
+                    <p>palapurba2004@gmail.com</p>
+                  </div>
                 </div>
-                <div class="info-col">
-                    <h2>Front-end Developer</h2>
-                    <p> I specialize in creating compelling web experiences with HTML, CSS, JavaScript, React.js, and Figma. I want to exceed expectations through user research, design thinking, and agile development. I am now learning Node.js and MongoDB. I offer a proactive mentality and devotion to quality to every project.
+
+                <!-- call box -->
+                <div class="icon-box">
+                  <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="info">
+                    <h4>Call:</h4>
+                    <!-- change your phone number  -->
+                    <p>+91 98648 03424</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="contact-icon-col"
+                style="
+                  flex: 1;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  min-width: 200px;
+                "
+              >
+                <!-- location box -->
+                <div class="icon-box">
+                  <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="info">
+                    <h4>Address:</h4>
+                    <p>Karaya, Bharatpur, Murshidabad, West Bengal, 742301</p>
+                  </div>
+                </div>
+
+                <!-- linkedin -->
+                <div class="icon-box">
+                  <div class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                  <div class="info">
+                    <h4>LinkedIn:</h4>
+                    <!-- change your linkedin -->
+                    <p>
+                      <a
+                        href="https://www.linkedin.com/in/apurba-pal-642729265/"
+                        target="_blank"
+                        >LinkedIn Profile</a
+                      >
                     </p>
-                    <div class="icon-list-col">
-                        <!-- left side list -->
-                        <div class="icon-list">
-                            <!-- chaneg your details here  -->
-                            <ul>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Age:</strong><span>20yrs</span></li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Phone:</strong><span>9864803424</span></li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Location:</strong><span>Barasat, kolkata, West Bengal</span></li>
-                            </ul>
-                        </div>
-                        <!-- right side list -->
-                        <div class="icon-list">
-                            <ul>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Birthday:</strong><span>10-01-2004</span></li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Degree:</strong><span>B.Tech in CSE</span></li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Freelance:</strong><span>Aailable</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Education moved from experience section -->
-                    <div class="about-edu">
-                        <h2>Education</h2>
-                        <div class="my-edu">
-                            <h3>B.Tech CSE</h3>
-                            <span class="sp-box">September 2022 – Expected 2026</span>
-                            <p>Adamas University, Kolkata, West Bengal</p>
-                            <h3>Higher Secondary Education</h3>
-                            <span class="sp-box">August 2013 – May 2022</span>
-                            <p>Faculty Senior Secondary School, Guwahati, Assam<br>Score: 93.4 percentile</p>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <!-- right col -->
+        </div>
+      </section>
 
-        <!-- experience section starts -->
-        <section id="experience">
-            <div class="sub-heading">Experience</div>
-            <div class="divider"></div>
-            <!-- <p class="sub-para">Welcome to my experience! Here, you'll find a summary of my skills, experiences, and accomplishments. From my education to my technical expertise, this experience provides an overview of my qualifications. I'm eager to showcase how I can contribute to your team or project.</p> -->
-
-            <div class="experience-row">
-                <!-- left column -->
-                
-
-                <!-- right column -->
-                <div class="experience-cols">
-                    <div class="pro-exp">
-                        <h3>Vigilantia Praesidium Pvt. Ltd.</h3>
-                        <span class="sp-box">May 2025 – Present</span>
-                        <p>Frontend Developer Intern</p>
-                        <ul>
-                            <li>Designed and developed the company's landing page, focusing on usability and visual appeal.</li>
-                            <li>Currently developing the entire website to showcase the company's surveillance solutions.</li>
-                        </ul>
-                    </div>
-                    <div class="pro-exp">
-                        <h3>AZMTH</h3>
-                        <span class="sp-box">August 2024 – Present</span>
-                        <p>Frontend Developer</p>
-                        <ul>
-                            <li>Crafted the landing page for AZMTH with a focus on usability and visual appeal.</li>
-                            <li>Developed a 3D audio player using Rhubarb Lip Sync and FFmpeg to synchronize audio with a 3D character.</li>
-                            <li>Developed a Python app for automated Google Calendar event scheduling with OAuth 2.0.</li>
-                        </ul>
-                    </div>
-                    <div class="pro-exp">
-                        <h3>Jindal Steel And Power Limited</h3>
-                        <span class="sp-box">August 2024 – November 2024</span>
-                        <p>Intern</p>
-                        <ul>
-                            <li>Scraped mechanical parts data from India Mart using Python, requests, and BeautifulSoup.</li>
-                            <li>Developed a cement bag counting system with OpenCV and YOLOv8.</li>
-                            <li>Built a truck number plate detection solution using OpenCV and Tesseract OCR.</li>
-                            <li>Optimized truck dispatches by analyzing customer data with Pandas and Excel.</li>
-                            <li>Automated email attachment storage in Google Drive via Google Apps Script.</li>
-                            <li>Created a script to update Google Sheets fields based on matching dimensions and weight thresholds.</li>
-                        </ul>
-                    </div>
-                    <div class="pro-exp">
-                        <h3>The Future Network, Kolkata</h3>
-                        <span class="sp-box">September 2023 – August 2024</span>
-                        <p>Software Developer</p>
-                        <ul>
-                            <li>Developed human detection models using OpenCV and YOLOv5.</li>
-                            <li>Created a handwritten digit recognition system using neural networks.</li>
-                            <li>Built Python scripts to transfer data between CSV files and SQL/no-SQL databases.</li>
-                            <li>Developed a chatbot using Groq API and CustomTkinter.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ressume section ends -->
-
-
-        <!-- projects section starts -->
-        <section id="projects">
-            <h1 class="sub-heading">Projects</h1>
-            <div class="divider"></div>
-            <p class=" sub-para">
-                Here are some of the projects I did using my skills and knowledge
-            
-
-
-
-            <div class="port-row">
-                <div class="port-item">
-                    <div class="port-img">
-                        <img src="/images/UI project.png" alt="">
-                    </div>
-                    <div class="port-info">
-                        <h4>3D Audio Visualizer</h4>
-                        <p>Real-time visualizer with Three.js</p>
-                    </div>
-                </div>
-                <div class="port-item">
-                    <div class="port-img">
-                        <img src="/images/Random-pass-gen.png" alt="">
-                    </div>
-                    <div class="port-info">
-                        <h4>3D Shirt Customizer</h4>
-                        <p>Interactive shirt customizer with React, Three.js, and React Three Fiber</p>
-                    </div>
-                </div>
-                <div class="port-item">
-                    <div class="port-img">
-                        <img src="images/ToDo list(vanila).png" alt="">
-                    </div>
-                    <div class="port-info">
-                        <h4>projects Website</h4>
-                        <p>React.js projects site with Firebase backend</p>
-                    </div>
-                </div>
-                <div class="port-item">
-                    <div class="port-img">
-                        <img src="/images/Flipping-login-signup-page.png" alt="">
-                    </div>
-                    <div class="port-info">
-                        <h4>3D Pokémon Website</h4>
-                        <p>3D projects site using Three.js with WASD-controlled character and interactive Pokémon models</p>
-                    </div>
-                </div>
-                <div class="port-item">
-                    <div class="port-img">
-                        <img src="/images/human_detection.gif" alt="">
-                    </div>
-                    <div class="port-info">
-                        <h4>Handwritten Digits Recognition</h4>
-                        <p>Neural network with Numpy & Matplotlib</p>
-                    </div>
-                </div>
-                <div class="port-item">
-                    <div class="port-img">
-                        <img src="/images/Air-movies.png" alt="">
-                    </div>
-                    <div class="port-info">
-                        <h4>Cat and Dog Classification</h4>
-                        <p>CNN model using TensorFlow & Keras</p>
-                    </div>
-                </div>
-                <div class="port-item">
-                    <div class="port-img">
-                        <img src="/images/UI project.png" alt="">
-                    </div>
-                    <div class="port-info">
-                        <h4>Personalized AI Assistant ("Open")</h4>
-                        <p>AI assistant for voice commands, app control, and chatbot functionality</p>
-                    </div>
-                </div>
-                <div class="port-item">
-                    <div class="port-img">
-                        <img src="/images/Random-pass-gen.png" alt="">
-                    </div>
-                    <div class="port-info">
-                        <h4>Gesture Controlled Volume</h4>
-                        <p>OpenCV app with MediaPipe for volume control via hand gestures</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- porfolio section ends -->
-
-        
-        <!-- skillss section start -->
-
-        <section id="skills">
-            <h1 class="sub-heading">Skills</h1>
-            <div class="divider"></div>
-            <p class="sub-para">Skilled in Python and JavaScript, with experience in full stack development, machine learning, computer vision, and data analysis. Proficient in modern frameworks, tools, and collaborative development workflows.</p>
-            <div class="skills-row">
-                <div class="skills-box">
-                    <div class="icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div class="ser-info">
-                        <h4>Programming Languages</h4>
-                        <p>Python, JavaScript</p>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="icon">
-                        <i class="fa-solid fa-globe"></i>
-                    </div>
-                    <div class="ser-info">
-                        <h4>Web Development</h4>
-                        <p>Figma, React.js, Node.js, Express.js, MongoDB, Three.js, Tailwind, React Three Fiber</p>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="icon">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-                    <div class="ser-info">
-                        <h4>Machine Learning & Deep Learning</h4>
-                        <p>TensorFlow, Keras, Scikit-Learn, Neural Networks (CNNs)</p>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="icon">
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="ser-info">
-                        <h4>Computer Vision</h4>
-                        <p>OpenCV, YOLO</p>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="icon">
-                        <i class="fa-solid fa-chart-bar"></i>
-                    </div>
-                    <div class="ser-info">
-                        <h4>Data Analysis</h4>
-                        <p>Pandas, Numpy</p>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="icon">
-                        <i class="fa-brands fa-git-alt"></i>
-                    </div>
-                    <div class="ser-info">
-                        <h4>Version Control</h4>
-                        <p>Git, Github</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- contact section start -->
-
-        <section id="contact">
-            <h1 class="sub-heading">Contact</h1>
-            <div class="divider"></div>
-            <p class="sub-para">I'd love to hear from you! Whether you have a project in mind, want to discuss potential collaborations, or simply want to connect, feel free to reach out using the contact form below. I'm always open to new opportunities and look forward to discussing how we can work together to bring your ideas to life.</p>
-
-            <div class="contact-row">
-                <!-- left col -->
-                <div class="contact-left">
-                    <div class="contact-icons-row" style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <div class="contact-icon-col" style="flex: 1; display: flex; flex-direction: column; gap: 20px; min-width: 200px;">
-                            <!-- email box -->
-                            <div class="icon-box">
-                                <div class="icon">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div class="info">
-                                    <h4>Email:</h4>
-                                    <!-- change your email -->
-                                    <p>palapurba2004@gmail.com</p>
-                                </div>
-                            </div>
-
-                            <!-- call box -->
-                            <div class="icon-box">
-                                <div class="icon">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div class="info">
-                                    <h4>Call:</h4>
-                                    <!-- change your phone number  -->
-                                    <p>+91 98648 03424</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-icon-col" style="flex: 1; display: flex; flex-direction: column; gap: 20px; min-width: 200px;">
-                            <!-- location box -->
-                            <div class="icon-box">
-                                <div class="icon">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div class="info">
-                                    <h4>Address:</h4>
-                                    <p>Karaya, Bharatpur, Murshidabad, West Bengal, 742301</p>
-                                </div>
-                            </div>
-
-
-                            <!-- linkedin -->
-                            <div class="icon-box">
-                                <div class="icon">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </div>
-                                <div class="info">
-                                    <h4>LinkedIn:</h4>
-                                    <!-- change your linkedin -->
-                                    <p><a href="https://www.linkedin.com/in/apurba-pal-642729265/" target="_blank">LinkedIn Profile</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- right col -->
-                
-
-            </div>
-        </section>
-
-        <!-- contact section ends -->
+      <!-- contact section ends -->
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
-        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
- 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
 </html>
