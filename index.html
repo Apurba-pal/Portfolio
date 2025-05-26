@@ -31,26 +31,34 @@
       <nav>
         <ul>
           <li>
-            <a href="#home" class="active"
+            <a href="#home" class="active" onclick="closeNavOnMobile()"
               ><i class="fa-solid fa-house"></i>Home</a
             >
           </li>
           <li>
-            <a href="#about"><i class="fa-solid fa-user"></i>About Me</a>
+            <a href="#about" onclick="closeNavOnMobile()"
+              ><i class="fa-solid fa-user"></i>About Me</a
+            >
           </li>
           <li>
-            <a href="#experience"><i class="fa-solid fa-file"></i>Experience</a>
+            <a href="#experience" onclick="closeNavOnMobile()"
+              ><i class="fa-solid fa-file"></i>Experience</a
+            >
           </li>
           <li>
-            <a href="#projects"
+            <a href="#projects" onclick="closeNavOnMobile()"
               ><i class="fa-solid fa-bars-progress"></i>Projects</a
             >
           </li>
           <li>
-            <a href="#skills"><i class="fa-solid fa-briefcase"></i>Skills</a>
+            <a href="#skills" onclick="closeNavOnMobile()"
+              ><i class="fa-solid fa-briefcase"></i>Skills</a
+            >
           </li>
           <li>
-            <a href="#contact"><i class="fa-solid fa-message"></i>Contact</a>
+            <a href="#contact" onclick="closeNavOnMobile()"
+              ><i class="fa-solid fa-message"></i>Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -345,6 +353,12 @@
             });
             if (tab === "web") btns[0].classList.add("active");
             else btns[1].classList.add("active");
+          }
+
+          function closeNavOnMobile() {
+            if (window.innerWidth <= 1050) {
+              document.body.classList.remove('mobile-nav-active');
+            }
           }
         </script>
         <style>
