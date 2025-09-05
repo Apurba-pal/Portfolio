@@ -241,6 +241,7 @@
         <div class="tabs">
           <button class="tab-btn active" onclick="showTab('web')">Web</button>
           <button class="tab-btn" onclick="showTab('ml')">ML</button>
+          <button class="tab-btn" onclick="showTab('game')">Game</button>
         </div>
         <div id="web" class="tab-content">
           <div class="port-row">
@@ -341,18 +342,36 @@
             </div>
           </div>
         </div>
+
+        <div id="game" class="tab-content" style="display: none">
+          <div class="port-row">
+            <div class="port-item">
+              <div class="port-img">
+                <img src="/images/still_they_stand.png" alt="" />
+              </div>
+              <div class="port-info">
+                <h4>Sill They Stand</h4>
+                <p>Horror Stealth game with flashlight mechanics.</p>
+                <a href="https://apurba-10.itch.io/still-they-stand" target="_blank" title="View on Itch.io"><i class="fa-solid fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
         <script>
           function showTab(tab) {
             document.getElementById("web").style.display =
               tab === "web" ? "" : "none";
             document.getElementById("ml").style.display =
               tab === "ml" ? "" : "none";
+            document.getElementById("game").style.display =
+              tab === "game" ? "" : "none";
             var btns = document.querySelectorAll(".tab-btn");
             btns.forEach(function (btn) {
               btn.classList.remove("active");
             });
             if (tab === "web") btns[0].classList.add("active");
-            else btns[1].classList.add("active");
+            else if (tab === "ml") btns[1].classList.add("active");
+            else if (tab === "game") btns[2].classList.add("active");
           }
 
           function closeNavOnMobile() {
